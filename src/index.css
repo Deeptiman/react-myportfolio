@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+body {
+  font-family: "Maven Pro", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.dashboard-parent-container {
+  width: 100%;
+  height: 'auto';
+}
+
+.dashboard-header-container {
+  width: 100vw;
+  height: 65vh;
+}
+
+.dashboard-banner-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  background-color: #0f0f0f;
+  opacity: 0.95;
+}
+
+.dashboard-banner-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url('./images/skills_banner.png');
+}
+
+.dashboard-profile-div {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin-top: 5em;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-name-container {
+  width: 40em;
+  display: flex;
+  margin-top: 2em;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+}
+
+.profile-designation-container {
+  width: 18em;
+  display: flex;
+  padding: 0.8em;
+  border-radius: 5em;
+  -webkit-box-shadow: 19px 24px 29px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 19px 24px 29px -6px rgba(0,0,0,0.75);
+  box-shadow: 19px 24px 29px -6px rgba(0,0,0,0.75);
+  margin-top: 1em;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #0c0b0b;
+}
+
+.profile-description-container {
+  width: 60%;
+  height: auto;
+  margin-top: 1em;
+  margin-left: 4em;
+}
+
+.profile-description {
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.7em;
+  position: relative;
+}
+
+.profile-designation {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+}
+
+.menu-bar-container {
+  width: 100vw;
+  height: 3.5em;
+  z-index: 3000;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.5px solid #646464;
+  background: rgb(29, 29, 29);
+}
+
+.profile {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+}
+
+.profile-image {
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;  
+}
