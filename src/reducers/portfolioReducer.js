@@ -1,7 +1,7 @@
 import { FETCH_PORTFOLIO } from '../actions/constants';
 
 const initialState = {
-    data: '',
+    portfolioLists: '',
 };
 
 const portfolioReducer = (state = initialState, action) => {
@@ -9,7 +9,7 @@ const portfolioReducer = (state = initialState, action) => {
         case FETCH_PORTFOLIO: {
             const newState = {
                 ...state,
-                data: action.payload,
+                portfolioLists: action.payload,
             };
             return newState;
         }

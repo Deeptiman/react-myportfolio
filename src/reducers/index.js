@@ -3,7 +3,7 @@ import {combineReducers} from 'redux';
 import portfolioReducer from './portfolioReducer';
 
 const rootReducer = combineReducers({
-    portfolio: portfolioReducer,
+    portfolioLists: portfolioReducer,
 });
 
 export default rootReducer;

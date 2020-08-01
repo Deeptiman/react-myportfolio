@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
-import '../../index.css';
-import profile from '../../images/deeptiman.png';
-import github from '../../images/github.png';
-import medium from '../../images/medium.png';
-import stackoverflow from '../../images/stackoverflow.png';
-import linkedin from '../../images/linkedin.png';
-import twitter from '../../images/twitter.png';
+import '../index.css';
+import profile from '../images/deeptiman.png';
+import github from '../images/github.png';
+import medium from '../images/medium.png';
+import stackoverflow from '../images/stackoverflow.png';
+import linkedin from '../images/linkedin.png';
+import twitter from '../images/twitter.png';
 
+import ProjectsComponent from './ProjectsComponent';
 
 export default class DashboardComponent extends Component {
 
+
+    componentDidMount() {
+    }
+
     render() {
+                
         return (
 
             <div className={'dashboard-header-container'}>
@@ -46,6 +52,10 @@ export default class DashboardComponent extends Component {
                         <p className={'profile-description'}>
                             I am very much curious to learn and build Blockchain applications and recently developed a few projects using Hyperledger Fabric  Distributed Ledger Technology that demonstrate the working techniques of a Permissioned based Blockchain network. Also, writing blogs at Medium to explain the brief concepts of Hyperledger Fabric.
                         </p>
+                    </div>
+
+                    <div className={'project-layout-container'}>
+                        <ProjectsComponent />
                     </div>
 
                 </div>

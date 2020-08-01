@@ -175,3 +175,55 @@ body {
   justify-content: flex-end;
   align-items: center;  
 }
+
+
+.banner {
+  width: 35em;
+  height: 20em;
+}
+
+.project-layout-container {
+  width: 100vw;
+  height: auto;
+  margin-top: 3em;
+  display: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+}
+
+
+.project-items-container {
+  width: 90vw; 
+  height: auto;
+  margin: 5em;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+
+.project-thumbnail-item {
+  width: 100%;
+  height: auto;
+  background-color: blue;  
+}
+
+.project-details-container {
+  width: 100%;
+  height: auto;
+  display: row;
+  background-color: yellow;
+}
+
+.project-name-container {
+  width: 100%;
+  height: 3em;
+  background-color: green;
+}
+
+.project-description-container {
+  width: 100%;
+  height: 4em;
+  background-color: indigo;
+}

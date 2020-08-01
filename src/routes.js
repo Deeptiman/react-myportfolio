@@ -1,4 +1,4 @@
-import Home from './components/Dashboard/DashboardComponent';
+import Home from './components/DashboardComponent';
 
 const routes = [
   {
