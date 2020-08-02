@@ -176,10 +176,13 @@ body {
   align-items: center;  
 }
 
-
 .banner {
-  width: 35em;
-  height: 20em;
+  width: 32em;
+  height: 18em;
+  -webkit-box-shadow: 19px 24px 29px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 19px 24px 29px -6px rgba(0,0,0,0.75);
+  box-shadow: 19px 24px 29px -6px rgba(0,0,0,0.75);
+  border-radius: 1.0em;
 }
 
 .project-layout-container {
@@ -190,40 +193,111 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #FFF;
+  background: #e7e4e4;
 }
 
-
-.project-items-container {
-  width: 90vw; 
+.project-even-items-container {
+  width: 82vw; 
   height: auto;
+  padding: 1.4em;
   margin: 5em;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 50%;  
+}
+
+.project-odd-items-container {
+  width: 82vw; 
+  height: auto;
+  padding: 1.4em;
+  margin: 5em;
+  display: grid;
+  grid-template-columns: 55% 50%;  
 }
 
 
 .project-thumbnail-item {
   width: 100%;
   height: auto;
-  background-color: blue;  
 }
 
 .project-details-container {
   width: 100%;
   height: auto;
-  display: row;
-  background-color: yellow;
+  display: column;  
 }
 
 .project-name-container {
   width: 100%;
   height: 3em;
-  background-color: green;
 }
 
 .project-description-container {
   width: 100%;
+  height: 4em;  
+  margin-top: 3em;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-description {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  line-height: 1.7em;
+  position: relative;  
+  text-shadow: 0.3px 0.3px #ccc;
+}
+
+.project-link-container {
+  width: 90%;
+  height: auto;
+  margin-top: 5em; 
+  display: flex;
+  flex-direction: column; 
+}
+
+.personal-project-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 85%;  
+}
+
+.medium {
+  width: 6em;
+  height: 6em; 
+}
+
+.medium-blog-container {
+}
+
+.github-repo-container {
+  width: 100%;
   height: 4em;
-  background-color: indigo;
+  margin-left: 3em;
+  display: flex;
+  flex-direction: column; 
+}
+
+.github-logo-buttton {
+  width: 12em;
+  height: 4em; 
+  justify-content: center;
+  align-items: center;
+}
+
+.github-badge-container {
+  width: 11vw; 
+  height: auto;
+  display: flex; 
+}
+
+.github-badge-icon {
+  padding: 0.5em;
+}
+
+.playstore-badge-icon {
+  width: 15em;
+  height: 6em;
+  padding: 0.5em;
 }
