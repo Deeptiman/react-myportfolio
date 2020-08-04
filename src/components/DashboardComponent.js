@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../index.css';
 import profile from '../images/deeptiman.png';
-import github from '../images/github.png';
-import medium from '../images/medium.png';
-import stackoverflow from '../images/stackoverflow.png';
-import linkedin from '../images/linkedin.png';
-import twitter from '../images/twitter.png';
+import github from '../images/github_text.png';
+import medium from '../images/medium_text.png';
+import stackoverflow from '../images/stackoverflow_text.png';
+import linkedin from '../images/linkedin_text.png';
+import twitter from '../images/twitter_text.png';
 
 import ProjectsComponent from './ProjectsComponent';
 
@@ -20,8 +20,7 @@ export default class DashboardComponent extends Component {
         return (
 
             <div className={'dashboard-header-container'}>
-                <div className={'dashboard-banner-container'}></div>
-                <img className={'dashboard-banner-background'} />
+                
                 
                 <div className={'dashboard-profile-div'}>
                     
@@ -38,11 +37,11 @@ export default class DashboardComponent extends Component {
                     </div>
                     
                     <div className={'social-profile-container'}>
-                            <a href="https://github.com/deeptiman" target="_blank"><img src={github} className={'social-icon'} /></a>
-                            <a href="https://stackoverflow.com/users/1453704/deeptimancode" target="_blank"><img src={stackoverflow} className={'social-icon'} /></a>
-                            <a href="https://www.linkedin.com/in/deeptiman123/" target="_blank"><img src={linkedin} className={'social-icon'} /></a>
-                            <a href="https://medium.com/@deeptiman" target="_blank"><img src={medium} className={'social-icon'} /></a>
-                            <a href="https://twitter.com/deeptimancode" target="_blank"><img src={twitter} className={'social-icon'} /></a>
+                            <a href="https://github.com/deeptiman" target="_blank"><img src={github} className={'github-social-icon'} /></a>
+                            <a href="https://stackoverflow.com/users/1453704/deeptimancode" target="_blank"><img src={stackoverflow} className={'stackoverflow-social-icon'} /></a>
+                            <a href="https://www.linkedin.com/in/deeptiman123/" target="_blank"><img src={linkedin} className={'linkedin-social-icon'} /></a>
+                            <a href="https://medium.com/@deeptiman" target="_blank"><img src={medium} className={'medium-social-icon'} /></a>
+                            <a href="https://twitter.com/deeptimancode" target="_blank"><img src={twitter} className={'twitter-social-icon'} /></a>
                     </div>
 
                     <div className={'profile-description-container'}>
@@ -57,7 +56,9 @@ export default class DashboardComponent extends Component {
                     <div className={'project-layout-container'}>
                         <ProjectsComponent />
                     </div>
-
+                    <div className={'dashboard-banner-container'}>
+                        <img className={'dashboard-banner-background'} />
+                    </div>
                 </div>
             </div>
 

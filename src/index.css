@@ -19,17 +19,14 @@ body {
 
 .dashboard-banner-container {
   width: 100vw;
-  height: 100vh;
-  position: fixed;
+  height: auto;
   z-index: 1;
-  background-color: #0f0f0f;
   opacity: 0.95;
 }
 
 .dashboard-banner-background {
   width: 100vw;
   height: 100vh;
-  position: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -87,21 +84,20 @@ body {
 }
 
 .profile-name {
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #fff;
-  font-weight: 300;
+  font-weight: 100;
+  font-size: 2.0rem;
+  color: rgb(53, 53, 53);
   font-family: 'Raleway', sans-serif;
 }
 
 .profile-designation-container {
-  width: 18em;
+  width: 15em;
   display: flex;
   padding: 0.8em;
   border-radius: 5em;
-  -webkit-box-shadow: 19px 24px 29px -6px rgba(0,0,0,0.75);
-  -moz-box-shadow: 19px 24px 29px -6px rgba(0,0,0,0.75);
-  box-shadow: 19px 24px 29px -6px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 19px 24px 29px -6px rgba(99, 99, 99,0.75);
+  -moz-box-shadow: 19px 24px 29px -6px rgba(99, 99, 99,0.75);
+  box-shadow: 19px 24px 29px -6px rgba(99, 99, 99,0.75);
   margin-top: 1em;
   flex-direction: row;
   align-items: flex-start;
@@ -109,10 +105,15 @@ body {
   background-color: #0c0b0b;
 }
 
+.profile-designation {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+}
 
 .social-profile-container {
-  width: 25em;
-  height: 4em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -121,11 +122,31 @@ body {
   border-radius: 0%;
 }
 
-.social-icon {
-  width: 3em;
-  height: 3em;
+.github-social-icon {
+  height: 3.2em;
   padding: 1em;
 }
+
+.stackoverflow-social-icon {
+  height: 2.5em;
+  padding: 1em;
+}
+
+.linkedin-social-icon {
+  height: 2em;
+  padding: 1em;
+}
+
+.medium-social-icon {
+  height: 1.5em;
+  padding: 1em;
+}
+
+.twitter-social-icon {
+  height: 1.5em;
+  padding: 1em;
+}
+
 
 
 .profile-description-container {
@@ -136,19 +157,11 @@ body {
 
 .profile-description {
   font-size: 1rem;
-  color: #ffffff;
+  color: rgb(59, 59, 59);
   line-height: 1.7em;
-  position: relative;
-  text-shadow: 2px 2px #0e0c0c;
+  position: relative;  
 }
 
-.profile-designation {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #fff;
-  font-weight: 300;
-  font-family: 'Raleway', sans-serif;
-}
 
 .menu-bar-container {
   width: 100vw;
@@ -164,8 +177,8 @@ body {
 }
 
 .profile {
-  width: 15em;
-  height: 15em;
+  width: 12em;
+  height: 12em;
   border-radius: 50%;
 }
 
@@ -219,6 +232,13 @@ body {
   width: 100%;
   height: auto;
 }
+
+.project-odd-thumbnail-item {
+  width: 100%;
+  height: auto;
+  margin-left: 3em;
+}
+
 
 .project-details-container {
   width: 100%;
