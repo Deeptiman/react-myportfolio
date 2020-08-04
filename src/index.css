@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 body {
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   overflow-x: hidden;
 }
@@ -17,20 +18,38 @@ body {
   height: 65vh;
 }
 
-.dashboard-banner-container {
+.dashboard-skills-container {
   width: 100vw;
-  height: auto;
-  z-index: 1;
-  opacity: 0.95;
+  height: auto; 
+  padding: 2em; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.dashboard-banner-background {
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-image: url('./images/skills_banner.png');
+.dashboard-skills-background {
+  height: 20em;
+  margin-top: 2em;
+}
+
+.tech-skills-container {
+  width: 15em;
+  display: flex;
+  padding: 0.8em;
+  border-radius: 5em;
+  margin-top: 1em;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #0c0b0b;
+}
+
+.tech-skills {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #fff;
+  
 }
 
 .dashboard-profile-div {
@@ -43,6 +62,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ 
 }
 
 .bubble-tech-name-container {
@@ -57,7 +77,7 @@ body {
   font-size: 0.7rem;
   color: #000;
   font-weight: 300;
-  font-family: 'Raleway', sans-serif;
+  
   background-color: #7c7c7b;
 }
 
@@ -71,7 +91,7 @@ body {
   font-size: 1.0rem;
   color: #000;
   font-weight: 300;
-  font-family: 'Raleway', sans-serif;
+  
 }
 
 .profile-name-container {
@@ -87,7 +107,7 @@ body {
   font-weight: 100;
   font-size: 2.0rem;
   color: rgb(53, 53, 53);
-  font-family: 'Raleway', sans-serif;
+  
 }
 
 .profile-designation-container {
@@ -95,9 +115,6 @@ body {
   display: flex;
   padding: 0.8em;
   border-radius: 5em;
-  -webkit-box-shadow: 19px 24px 29px -6px rgba(99, 99, 99,0.75);
-  -moz-box-shadow: 19px 24px 29px -6px rgba(99, 99, 99,0.75);
-  box-shadow: 19px 24px 29px -6px rgba(99, 99, 99,0.75);
   margin-top: 1em;
   flex-direction: row;
   align-items: flex-start;
@@ -110,7 +127,7 @@ body {
   font-size: 0.9rem;
   color: #fff;
   font-weight: 300;
-  font-family: 'Raleway', sans-serif;
+  
 }
 
 .social-profile-container {
@@ -206,7 +223,37 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #e7e4e4;
+  background: #e2e1e1;
+}
+
+.project-list-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.project-label-container {
+  width: 15em;
+  display: flex;
+  padding: 0.8em;
+  border-radius: 5em;
+  margin-top: 3em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c0b0b;
+}
+
+.project-label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #fff;
+  
 }
 
 .project-even-items-container {
@@ -262,7 +309,7 @@ body {
 .project-description {
   font-size: 1rem;
   font-weight: 300;
-  font-family: 'Raleway', sans-serif;
+  
   color: #000000;
   line-height: 1.7em;
   position: relative;  

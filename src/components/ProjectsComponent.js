@@ -125,7 +125,10 @@ class ProjectsComponent extends Component {
         console.log("Read Portfolio ::: "+portfolioLists.length+" >>> "+JSON.stringify(portfolioLists));
 
         return (
-            <div>
+            <div className={'project-list-container'}>
+                    <div className={'project-label-container'}>
+                        <span className={'project-label'}>Projects</span>                        
+                    </div>
                   {this.renderPortfolioLists(portfolioLists)}              
             </div>
         )

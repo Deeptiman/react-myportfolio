@@ -7,6 +7,7 @@ import stackoverflow from '../images/stackoverflow_text.png';
 import linkedin from '../images/linkedin_text.png';
 import twitter from '../images/twitter_text.png';
 
+import skills from '../images/skills.png';
 import ProjectsComponent from './ProjectsComponent';
 
 export default class DashboardComponent extends Component {
@@ -53,11 +54,16 @@ export default class DashboardComponent extends Component {
                         </p>
                     </div>
 
-                    <div className={'project-layout-container'}>
+                    <div className={'project-layout-container'}>                        
                         <ProjectsComponent />
                     </div>
-                    <div className={'dashboard-banner-container'}>
-                        <img className={'dashboard-banner-background'} />
+                    <div className={'dashboard-skills-container'}>
+
+                        <div className={'tech-skills-container'}>
+                            <span className={'tech-skills'}>Technical Skills</span>                        
+                        </div>
+                        <img src={skills} className={'dashboard-skills-background'} />
+
                     </div>
                 </div>
             </div>
