@@ -29,7 +29,7 @@ class ProjectsComponent extends Component {
                             </div>                        
                         }
 
-                        <div className={'github-repo-container'}>
+                        <div className={'github-repo-container'} style={portfolioItem.hasMedium === true? ({ marginLeft: '3em' }): ({})}>
                             <a href={portfolioItem.github} target="_blank">
                                 <img src={github} className={'github-logo-buttton'} />    
                             </a>
@@ -60,9 +60,9 @@ class ProjectsComponent extends Component {
         console.log("Reading Tools --> "+tools.length)
         if(tools.length > 0) {
             return (
-                tools.map(tool => 
+                tools.map((tool,index) => 
                     <a href={tool.link} style={{ textDecoration: 'none' }} target="_blank">
-                        <div className={'project-tools-item'}>
+                        <div className={'project-tools-item'} style={index!=0? ({ marginLeft: '1em' }): ({})}>
                             <span className={'project-tools'}>{tool.name}</span>
                         </div>
                     </a>

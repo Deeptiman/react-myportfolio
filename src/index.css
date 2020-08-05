@@ -334,13 +334,12 @@ body {
   padding-top: 0.1em;
   padding-bottom: 0.3em;
   border-radius: 5em;
-  border: 0.5px solid #333;
+  border: 0.5px solid #0c0b0b;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 1em;
   display: block;
-  background: #333;
+  background: #0c0b0b;
 }
 
 .project-tools {
@@ -374,7 +373,6 @@ body {
 .github-repo-container {
   width: 100%;
   height: 4em;
-  margin-left: 3em;
   display: flex;
   flex-direction: column; 
 }
@@ -397,7 +395,5 @@ body {
 }
 
 .playstore-badge-icon {
-  width: 15em;
-  height: 6em;
-  padding: 0.5em;
+  height: 6em;  
 }

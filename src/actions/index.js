@@ -13,8 +13,7 @@ export const fetchPortfolioLists = () => dispatch => {
         {
             id: 1,
             name: 'React-Native TODO List Application',
-            description: 'The react-native-todolist application is a cross-platform mobile application developed using the <a href="https://reactnative.dev/docs/getting-started" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">React-Native</a> framework with <a href="https://redux.js.org/introduction/getting-started" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">Redux</a> implementation. The application has features to create a calendar in both Google & Microsoft cloud platforms, users can also receive a push notification from the server based on topic subscription.',
-            banner: require('../images/todolist_app.png'),           
+            description: 'The react-native-todolist application is a cross-platform mobile application developed using the React-Native framework with Redux implementation. The application has features to create a calendar in both Google & Microsoft cloud platforms, users can also receive a push notification from the server based on topic subscription.',    banner: require('../images/todolist_app.png'),           
             tools: [
                 {
                     name: 'react-native',
@@ -47,7 +46,7 @@ export const fetchPortfolioLists = () => dispatch => {
         {
             id: 2,
             name: 'Hyperledger Fabric - Single Organization Demo',
-            description: 'The <a href="https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html" target="_blank" style="color: #000;text-decoration: none; margin-top: 4px; border-bottom: 2px solid black;">Blockchain</a> application written in <a href="https://golang.org/doc/" target="_blank" style="color: #000; margin-top: 4px;text-decoration: none;border-bottom: 2px solid black;">Go language</a> to demonstrate the <a href="https://hyperledger-fabric.readthedocs.io/" target="_blank" style="color: #000; margin-top: 4px; text-decoration: none;border-bottom: 2px solid black;">Hyperledger Fabric</a> Blockchain framework. The project repo has been designed to upload employee records into the blockchain and also has the functionality to update, delete the record stored securely in the Hyperledger framework.',
+            description: 'The Blockchain application written in Go language to demonstrate the Hyperledger Fabric Blockchain framework. The project repo has been designed to upload employee records into the blockchain and also has the functionality to update, delete the record stored securely in the Hyperledger framework.',
             banner: require('../images/hyperledger_single_org.png'),
             tools: [
                 {
@@ -81,7 +80,7 @@ export const fetchPortfolioLists = () => dispatch => {
         {
             id: 3,
             name: 'Hyperledger Fabric - Multi Organization Demo',
-            description: 'The <a href="https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html" target="_blank" style="color: #000;text-decoration: none; margin-top: 4px; border-bottom: 2px solid black;">Blockchain</a> network consists of four organization joined with a  single channel. The ledger data created in an organization can be accessible by the other participating organization in the network.',
+            description: 'The Blockchain network consists of four organization joined with a  single channel. The ledger data created in an organization can be accessible by the other participating organization in the network.',
             banner: require('../images/hyperledger_multi_org_banner.png'),
             tools: [
                 {
@@ -115,7 +114,7 @@ export const fetchPortfolioLists = () => dispatch => {
         {
             id: 4,
             name: 'Hyperledger Fabric - Privacy and Confidentiality',
-            description: 'The <a href="https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html" target="_blank" style="color: #000;text-decoration: none; margin-top: 4px; border-bottom: 2px solid black;">Blockchain</a> application will store the records in a private network that the records will only be accessible to the parent organization unless the records are shared with other organization in the network. The project will demonstrate <a href="https://developer.ibm.com/technologies/blockchain/tutorials/cl-blockchain-private-confidential-transactions-hyperledger-fabric-zero-knowledge-proof" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">Privacy and Confidentiality</a> in Hyperledger Fabric.',
+            description: 'The Blockchain application will store the records in a private network that the records will only be accessible to the parent organization unless the records are shared with other organization in the network. The project will demonstrate Privacy and Confidentiality in Hyperledger Fabric.',
             banner: require('../images/hyperledger_private_org_banner.png'),
             tools: [
                 {
@@ -153,7 +152,7 @@ export const fetchPortfolioLists = () => dispatch => {
         {
             id: 5,
             name: 'Hyperledger Fabric - Offchain Storage',
-            description: 'The <a href="https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html" target="_blank" style="color: #000;text-decoration: none; margin-top: 4px; border-bottom: 2px solid black;">Blockchain</a> application is a sample demonstration to understand the concept of implementing offchain storage and it\'s capability in Hyperledger fabric Blockchain network. So, this project will work as a peer block event listener and will store the block details in the <a href="https://docs.couchdb.org/en/stable/" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">CouchDB</a> that can be query through <a href="https://en.wikipedia.org/wiki/MapReduce" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">MapReduce</a>.',
+            description: 'The Blockchain application is a sample demonstration to understand the concept of implementing offchain storage and it\'s capability in Hyperledger fabric Blockchain network. So, this project will work as a peer block event listener and will store the block details in the CouchDB that can be query through MapReduce.',
             banner: require('../images/hyperledger_offchain_data_banner.png'),
             tools: [
                 {
@@ -249,7 +248,7 @@ export const fetchPortfolioLists = () => dispatch => {
         {
             id: 8,
             name: 'PHP Dom Parser and Translation Tool',
-            description: 'The web application is developed to demonstrate translation in live web pages by parsing through <a href="https://www.w3schools.com/whatis/whatis_htmldom.asp" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">HTML DOM</a> and extracting the text element and match them with an English to Odia dictionary that is stored in a local database. The complete parsing result will preview as a translated webpage for a website.',
+            description: 'The web application is developed to demonstrate translation in live web pages by parsing through HTML DOM and extracting the text element and match them with an English to Odia dictionary that is stored in a local database. The complete parsing result will preview as a translated webpage for a website.',
             banner: require('../images/parser_tool.png'),
             tools: [
                 {
@@ -282,7 +281,7 @@ export const fetchPortfolioLists = () => dispatch => {
         {
             id: 9,
             name: 'Android Alphabet learning App',
-            description: 'The application is an <a href="https://en.wikipedia.org/wiki/Odia_script" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">Odia letter</a> learning app that be helpful for people to learn Odia letters writing. The app has a learning module that will help to learn and understand the exact writing of an Odia letter.',
+            description: 'The application is an Odia letter learning app that be helpful for people to learn Odia letters writing. The app has a learning module that will help to learn and understand the exact writing of an Odia letter.',
             banner: require('../images/alphabet_app.png'),
             tools: [
                 {
