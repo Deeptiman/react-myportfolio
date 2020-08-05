@@ -56,9 +56,31 @@ class ProjectsComponent extends Component {
         }
     }
 
+    projectTools = (tools) => {
+        console.log("Reading Tools --> "+tools.length)
+        if(tools.length > 0) {
+            return (
+                tools.map(tool => 
+                    <a href={tool.link} style={{ textDecoration: 'none' }} target="_blank">
+                        <div className={'project-tools-item'}>
+                            <span className={'project-tools'}>{tool.name}</span>
+                        </div>
+                    </a>
+                )
+            )
+        }
+    }
+
     renderEvenPortfolioDetails = (portfolioItem,index) => {
         console.log("Name -- "+portfolioItem.name)
-       
+        console.log("Tools --> ||| "+portfolioItem.tools.length)
+
+        /*if(portfolioItem.tools.length > 0) {
+            portfolioItem.tools.map((tool, index) => {
+                console.log("ToolName :: "+tool.name)
+            })
+        }*/
+
         return (
             <div className={'project-even-items-container'}>                
                     <div className={'project-thumbnail-item'}>
@@ -69,6 +91,9 @@ class ProjectsComponent extends Component {
                         <div className={'project-description-container'}>
                            <p className={'project-description'}> {parse(portfolioItem.description)} </p>
                         </div>
+                        <div className={'project-even-tools-container'}>                               
+                           {this.projectTools(portfolioItem.tools)}                       
+                        </div>
                         {this.checkServer(portfolioItem)}
                     </div>                
             </div>
@@ -77,7 +102,14 @@ class ProjectsComponent extends Component {
 
     renderOddPortfolioDetails = (portfolioItem,index) => {
         console.log("Name -- "+portfolioItem.name)
+        console.log("Tools --> ::: "+portfolioItem.tools.length)
         
+        /*if(portfolioItem.tools.length > 0) {
+            portfolioItem.tools.map((tool, index) => {
+                console.log("ToolName :: "+tool.name)
+            })
+        }*/
+
         return (
             <div className={'project-odd-items-container'}>                
                     <div className={'project-details-container'}>
@@ -85,7 +117,9 @@ class ProjectsComponent extends Component {
                         <div className={'project-description-container'}>
                             <p className={'project-description'}> {parse(portfolioItem.description)} </p>
                         </div>
-                        
+                        <div className={'project-odd-tools-container'}>
+                            {this.projectTools(portfolioItem.tools)}
+                        </div>
                         {this.checkServer(portfolioItem)}
 
                     </div>                
@@ -118,11 +152,11 @@ class ProjectsComponent extends Component {
     }
 
     render() {
-        console.log("Portfolio ->>> "+JSON.stringify(this.props.portfolioLists))
+        //console.log("Portfolio ->>> "+JSON.stringify(this.props.portfolioLists))
 
         var portfolioLists = JSON.parse(JSON.stringify(this.props.portfolioLists)).portfolioLists;
         
-        console.log("Read Portfolio ::: "+portfolioLists.length+" >>> "+JSON.stringify(portfolioLists));
+        //console.log("Read Portfolio ::: "+portfolioLists.length+" >>> "+JSON.stringify(portfolioLists));
 
         return (
             <div className={'project-list-container'}>

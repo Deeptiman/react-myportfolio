@@ -126,8 +126,7 @@ body {
   font-weight: 700;
   font-size: 0.9rem;
   color: #fff;
-  font-weight: 300;
-  
+  font-weight: 300;  
 }
 
 .social-profile-container {
@@ -300,8 +299,8 @@ body {
 
 .project-description-container {
   width: 100%;
-  height: 4em;  
-  margin-top: 3em;
+  height: auto;  
+  margin-top: 1em;
   justify-content: center;
   align-items: center;
 }
@@ -309,17 +308,51 @@ body {
 .project-description {
   font-size: 1rem;
   font-weight: 300;
-  
   color: #000000;
   line-height: 1.7em;
   position: relative;  
   text-shadow: 0.3px 0.3px #ccc;
 }
 
+.project-even-tools-container {
+  height: auto;  
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em; 
+}
+
+.project-odd-tools-container {
+  height: auto;  
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em; 
+}
+
+.project-tools-item {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.1em;
+  padding-bottom: 0.3em;
+  border-radius: 5em;
+  border: 0.5px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+  display: block;
+  background: #333;
+}
+
+.project-tools {
+  font-weight: 300;
+  font-size: 0.7rem;
+  color: #fff;
+}
+
 .project-link-container {
   width: 90%;
   height: auto;
-  margin-top: 5em; 
+  margin-top: 1em; 
   display: flex;
   flex-direction: column; 
 }

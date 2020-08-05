@@ -15,7 +15,24 @@ export const fetchPortfolioLists = () => dispatch => {
             name: 'React-Native TODO List Application',
             description: 'The react-native-todolist application is a cross-platform mobile application developed using the <a href="https://reactnative.dev/docs/getting-started" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">React-Native</a> framework with <a href="https://redux.js.org/introduction/getting-started" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">Redux</a> implementation. The application has features to create a calendar in both Google & Microsoft cloud platforms, users can also receive a push notification from the server based on topic subscription.',
             banner: require('../images/todolist_app.png'),           
-            tools: ['Tool1', 'Tool2', 'Tool3'],
+            tools: [
+                {
+                    name: 'react-native',
+                    link: 'https://reactnative.dev/docs/0.5/getting-started'
+                },
+                {
+                    name: 'redux',
+                    link: 'https://redux.js.org/introduction/getting-started'
+                },
+                {
+                    name: 'google-calendar-api',
+                    link: 'https://developers.google.com/calendar/v3/reference/events'
+                },
+                {
+                    name: 'microsoft-graph-api',
+                    link: 'https://docs.microsoft.com/en-us/graph/api/calendar-post-events?view=graph-rest-1.0&tabs=http'
+                }
+            ],
             github: 'https://github.com/Deeptiman/react-native-todolist',
             github_badges_last_commit: "https://img.shields.io/github/last-commit/Deeptiman/react-native-todolist",
             github_badges_language_count: "https://img.shields.io/github/languages/count/Deeptiman/react-native-todolist",
@@ -32,7 +49,24 @@ export const fetchPortfolioLists = () => dispatch => {
             name: 'Hyperledger Fabric - Single Organization Demo',
             description: 'The <a href="https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html" target="_blank" style="color: #000;text-decoration: none; margin-top: 4px; border-bottom: 2px solid black;">Blockchain</a> application written in <a href="https://golang.org/doc/" target="_blank" style="color: #000; margin-top: 4px;text-decoration: none;border-bottom: 2px solid black;">Go language</a> to demonstrate the <a href="https://hyperledger-fabric.readthedocs.io/" target="_blank" style="color: #000; margin-top: 4px; text-decoration: none;border-bottom: 2px solid black;">Hyperledger Fabric</a> Blockchain framework. The project repo has been designed to upload employee records into the blockchain and also has the functionality to update, delete the record stored securely in the Hyperledger framework.',
             banner: require('../images/hyperledger_single_org.png'),
-            tools: ['Tool1', 'Tool2', 'Tool3'],
+            tools: [
+                {
+                    name: 'blockchain',
+                    link: 'https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html'
+                },
+                {
+                    name: 'hyperledger',
+                    link: 'https://hyperledger-fabric.readthedocs.io/'
+                },
+                {
+                    name: 'docker',
+                    link: 'https://docs.docker.com/'
+                },
+                {
+                    name: 'golang',
+                    link: 'https://golang.org/doc/'
+                }
+            ],
             github: 'https://github.com/Deeptiman/employeeledger',
             github_badges_last_commit: "https://img.shields.io/github/last-commit/Deeptiman/employeeledger",
             github_badges_language_count: "https://img.shields.io/github/languages/count/Deeptiman/employeeledger",
@@ -49,7 +83,24 @@ export const fetchPortfolioLists = () => dispatch => {
             name: 'Hyperledger Fabric - Multi Organization Demo',
             description: 'The <a href="https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html" target="_blank" style="color: #000;text-decoration: none; margin-top: 4px; border-bottom: 2px solid black;">Blockchain</a> network consists of four organization joined with a  single channel. The ledger data created in an organization can be accessible by the other participating organization in the network.',
             banner: require('../images/hyperledger_multi_org_banner.png'),
-            tools: ['Tool1', 'Tool2', 'Tool3'],
+            tools: [
+                {
+                    name: 'blockchain',
+                    link: 'https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html'
+                },
+                {
+                    name: 'hyperledger',
+                    link: 'https://hyperledger-fabric.readthedocs.io/'
+                },
+                {
+                    name: 'docker',
+                    link: 'https://docs.docker.com/'
+                },
+                {
+                    name: 'golang',
+                    link: 'https://golang.org/doc/'
+                }
+            ],
             github: 'https://github.com/Deeptiman/multiorgledger',
             github_badges_last_commit: "https://img.shields.io/github/last-commit/Deeptiman/multiorgledger",
             github_badges_language_count: "https://img.shields.io/github/languages/count/Deeptiman/multiorgledger",
@@ -66,7 +117,28 @@ export const fetchPortfolioLists = () => dispatch => {
             name: 'Hyperledger Fabric - Privacy and Confidentiality',
             description: 'The <a href="https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html" target="_blank" style="color: #000;text-decoration: none; margin-top: 4px; border-bottom: 2px solid black;">Blockchain</a> application will store the records in a private network that the records will only be accessible to the parent organization unless the records are shared with other organization in the network. The project will demonstrate <a href="https://developer.ibm.com/technologies/blockchain/tutorials/cl-blockchain-private-confidential-transactions-hyperledger-fabric-zero-knowledge-proof" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">Privacy and Confidentiality</a> in Hyperledger Fabric.',
             banner: require('../images/hyperledger_private_org_banner.png'),
-            tools: ['Tool1', 'Tool2', 'Tool3'],
+            tools: [
+                {
+                    name: 'private-blockchain',
+                    link: 'https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html'
+                },
+                {
+                    name: 'hyperledger',
+                    link: 'https://hyperledger-fabric.readthedocs.io/'
+                },
+                {
+                    name: 'docker',
+                    link: 'https://docs.docker.com/'
+                },
+                {
+                    name: 'golang',
+                    link: 'https://golang.org/doc/'
+                },
+                {
+                    name: 'gdpr',
+                    link: 'https://www.ibm.com/downloads/cas/GNQZVQR3'
+                }
+            ],
             github: 'https://github.com/Deeptiman/privateledger',
             github_badges_last_commit: "https://img.shields.io/github/last-commit/Deeptiman/privateledger",
             github_badges_language_count: "https://img.shields.io/github/languages/count/Deeptiman/privateledger",
@@ -83,7 +155,28 @@ export const fetchPortfolioLists = () => dispatch => {
             name: 'Hyperledger Fabric - Offchain Storage',
             description: 'The <a href="https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html" target="_blank" style="color: #000;text-decoration: none; margin-top: 4px; border-bottom: 2px solid black;">Blockchain</a> application is a sample demonstration to understand the concept of implementing offchain storage and it\'s capability in Hyperledger fabric Blockchain network. So, this project will work as a peer block event listener and will store the block details in the <a href="https://docs.couchdb.org/en/stable/" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">CouchDB</a> that can be query through <a href="https://en.wikipedia.org/wiki/MapReduce" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">MapReduce</a>.',
             banner: require('../images/hyperledger_offchain_data_banner.png'),
-            tools: ['Tool1', 'Tool2', 'Tool3'],
+            tools: [
+                {
+                    name: 'blockchain',
+                    link: 'https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html'
+                },
+                {
+                    name: 'offchain-storage',
+                    link: 'https://www.ibm.com/downloads/cas/RXOVXAPM'
+                },
+                {
+                    name: 'couchdb',
+                    link: 'https://docs.couchdb.org/'
+                },
+                {
+                    name: 'mapreduce',
+                    link: 'https://en.wikipedia.org/wiki/MapReduce'
+                },
+                {
+                    name: 'grpc-go',
+                    link: 'https://grpc.io/docs/languages/go/basics/'
+                }
+            ],
             github: 'https://github.com/Deeptiman/offchaindata',
             github_badges_last_commit: "https://img.shields.io/github/last-commit/Deeptiman/offchaindata",
             github_badges_language_count: "https://img.shields.io/github/languages/count/Deeptiman/offchaindata",
@@ -100,7 +193,24 @@ export const fetchPortfolioLists = () => dispatch => {
             name: 'Sur Sadhana',
             description: 'Sur Sadhana, it\'s a music app that a singer can analyse his/her singing skill. The app will give the Graphical representation of the voice with a scorecard to the singer.',
             banner: require('../images/sur_sadhana_banner.png'),
-            tools: ['Tool1', 'Tool2'],
+            tools: [
+                {
+                    name: 'android',
+                    link: 'https://developer.android.com/'
+                },
+                {
+                    name: 'android-audio-record',
+                    link: 'https://developer.android.com/reference/android/media/AudioRecord'
+                },
+                {
+                    name: 'achartengine',
+                    link: 'https://github.com/ddanny/achartengine'
+                },
+                {
+                    name: 'standard-deviation',
+                    link: 'https://en.wikipedia.org/wiki/Standard_deviation'
+                }
+            ],
             github: '',
             hasGithub: false,
             hasMedium: false,
@@ -112,7 +222,24 @@ export const fetchPortfolioLists = () => dispatch => {
             name: 'Beat Station',
             description: 'BeatStation is a music app where people can listen to their favorite Genre online. The application is built with large storage of music mp3 files in the server that sync with the mobile application for the streaming of the music files.',
             banner: require('../images/beat_station.png'),
-            tools: ['Tool1', 'Tool2'],
+            tools: [
+                {
+                    name: 'play-audio-android',
+                    link: 'https://developer.android.com/guide/topics/media/mediaplayer'
+                },
+                {
+                    name: 'stream-mp3-android',
+                    link: 'https://developer.android.com/guide/topics/media/mediaplayer'
+                },
+                {
+                    name: 'aws-s3-bucket',
+                    link: 'https://aws.amazon.com/s3/'
+                },
+                {
+                    name: 'android-fragments',
+                    link: 'https://developer.android.com/guide/components/fragments'
+                }
+            ],
             github: '',
             hasGithub: false,
             hasMedium: false,
@@ -124,7 +251,24 @@ export const fetchPortfolioLists = () => dispatch => {
             name: 'PHP Dom Parser and Translation Tool',
             description: 'The web application is developed to demonstrate translation in live web pages by parsing through <a href="https://www.w3schools.com/whatis/whatis_htmldom.asp" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">HTML DOM</a> and extracting the text element and match them with an English to Odia dictionary that is stored in a local database. The complete parsing result will preview as a translated webpage for a website.',
             banner: require('../images/parser_tool.png'),
-            tools: ['Tool1', 'Tool2'],
+            tools: [
+                {
+                    name: 'php',
+                    link: 'https://www.php.net/docs.php'
+                },
+                {
+                    name: 'dom-parser',
+                    link: 'https://www.w3schools.com/php/php_xml_dom.asp'
+                },
+                {
+                    name: 'statistical-machine-translation',
+                    link: 'https://en.wikipedia.org/wiki/Statistical_machine_translation'
+                },
+                {
+                    name: 'parallel-corpus',
+                    link: 'https://en.wikipedia.org/wiki/Parallel_text'
+                }
+            ],
             github: 'https://github.com/Deeptiman/php-dom-parser-translation-tool',
             github_badges_last_commit: "https://img.shields.io/github/last-commit/Deeptiman/php-dom-parser-translation-tool",
             github_badges_language_count: "https://img.shields.io/github/languages/count/Deeptiman/php-dom-parser-translation-tool",
@@ -140,7 +284,24 @@ export const fetchPortfolioLists = () => dispatch => {
             name: 'Android Alphabet learning App',
             description: 'The application is an <a href="https://en.wikipedia.org/wiki/Odia_script" target="_blank" style="color: #000;text-decoration: none;border-bottom: 2px solid black;">Odia letter</a> learning app that be helpful for people to learn Odia letters writing. The app has a learning module that will help to learn and understand the exact writing of an Odia letter.',
             banner: require('../images/alphabet_app.png'),
-            tools: ['Tool1', 'Tool2'],
+            tools: [
+                {
+                    name: 'android-application',
+                    link: 'https://developer.android.com/'
+                },
+                {
+                    name: 'android-ndk',
+                    link: 'https://developer.android.com/ndk'
+                },
+                {
+                    name: 'gesture-recognition',
+                    link: 'https://developer.android.com/training/gestures/detector'
+                },
+                {
+                    name: 'odia-alphabet',
+                    link: 'https://en.wikipedia.org/wiki/Odia_script'
+                }
+            ],
             github: 'https://github.com/Deeptiman/Alphabet-Learning-Android-Application',
             github_badges_last_commit: "https://img.shields.io/github/last-commit/Deeptiman/Alphabet-Learning-Android-Application",
             github_badges_language_count: "https://img.shields.io/github/languages/count/Deeptiman/Alphabet-Learning-Android-Application",
@@ -156,7 +317,28 @@ export const fetchPortfolioLists = () => dispatch => {
             name: 'Online Examination App',
             description: 'The application is an examination platform where a student can give an assessment online. The teachers can set questions and time for the assessment from the mobile application.',
             banner: require('../images/fellowprap_banner.png'),
-            tools: ['Tool1', 'Tool2'],
+            tools: [
+                {
+                    name: 'android-application',
+                    link: 'https://developer.android.com/'
+                },
+                {
+                    name: 'rest-api',
+                    link: 'https://developers.google.com/android/guides/http-auth'
+                },
+                {
+                    name: 'json',
+                    link: 'https://www.json.org/'
+                },
+                {
+                    name: 'sqlite',
+                    link: 'https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase'
+                },
+                {
+                    name: 'amazon-aws',
+                    link: 'https://aws.amazon.com/'
+                }
+            ],
             github: '',
             hasGithub: false,
             hasMedium: false,
@@ -168,7 +350,29 @@ export const fetchPortfolioLists = () => dispatch => {
             name: 'TODO List Planner App',
             description: 'In this application, the user can plan, schedule his/her daily activity. There is also a Calendar feature where the user can view their planned activity status with different distinct colors.',
             banner: require('../images/fellowregister_banner.png'),
-            tools: ['Tool1', 'Tool2'],
+            tools: [
+               
+                {
+                    name: 'android-sync-adapter',
+                    link: 'https://developer.android.com/training/sync-adapters/creating-sync-adapter'
+                },
+                {
+                    name: 'rest-api',
+                    link: 'https://developers.google.com/android/guides/http-auth'
+                },
+                {
+                    name: 'json',
+                    link: 'https://www.json.org/'
+                },
+                {
+                    name: 'sqlite',
+                    link: 'https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase'
+                },
+                {
+                    name: 'amazon-aws',
+                    link: 'https://aws.amazon.com/'
+                }
+            ],
             github: '',
             hasGithub: false,
             hasMedium: false,
