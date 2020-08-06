@@ -9,6 +9,7 @@ import twitter from '../images/twitter_text.png';
 
 import skills from '../images/skills.png';
 import ProjectsComponent from './ProjectsComponent';
+import ContactComponent from './ContactComponent';
 
 export default class DashboardComponent extends Component {
 
@@ -22,6 +23,14 @@ export default class DashboardComponent extends Component {
 
             <div className={'dashboard-header-container'}>
                 
+                <div className={'menu-bar-container'}>
+                    <div className={'menu-label-item-container'}>
+                        <a href="#" className={'menu-label-text'}><span>Profile</span></a>
+                        <a href="#projects" className={'menu-label-text'}><span>Projects</span></a>
+                        <a href="#technical-skills" className={'menu-label-text'}><span>Technical Skills</span></a>
+                        <a href="#contacts" className={'menu-label-text'}><span>Contacts</span></a>
+                    </div>
+                </div>
                 
                 <div className={'dashboard-profile-div'}>
                     
@@ -54,10 +63,10 @@ export default class DashboardComponent extends Component {
                         </p>
                     </div>
 
-                    <div className={'project-layout-container'}>                        
+                    <div id={'projects'} className={'project-layout-container'}>                        
                         <ProjectsComponent />
                     </div>
-                    <div className={'dashboard-skills-container'}>
+                    <div id={'technical-skills'} className={'dashboard-skills-container'}>
 
                         <div className={'tech-skills-container'}>
                             <span className={'tech-skills'}>Technical Skills</span>                        
@@ -65,6 +74,11 @@ export default class DashboardComponent extends Component {
                         <img src={skills} className={'dashboard-skills-background'} />
 
                     </div>
+
+                    <div id={'contacts'} className={'contact-container'}>
+                        <ContactComponent />
+                    </div>
+
                 </div>
             </div>
 
