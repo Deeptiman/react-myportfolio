@@ -32,7 +32,7 @@ html, body {
 }
 
 .dashboard-skills-background {
-  height: 20em;
+  height: 30em;
   margin-top: 2em;
 }
 
@@ -49,8 +49,8 @@ html, body {
 }
 
 .tech-skills {
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-weight: bold;
+  font-size: 1.1rem;
   color: #fff;
   
 }
@@ -190,7 +190,21 @@ html, body {
   justify-content: center;
   align-items: center;
   border-bottom: 0.5px solid #b6b5b5;
-  background: rgb(255, 245, 245);
+  background-color: white;
+}
+
+.menu-portfolio-logo-container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.portfolio-logo {
+  width: auto;
+  height: 1.8em;
+  margin-left: 6em;
 }
 
 .menu-label-item-container {
@@ -203,15 +217,16 @@ html, body {
 }
 
 .menu-label-text {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: bold;
   color: rgb(44, 44, 44);
   text-decoration: none;
   padding: 1em;
 }
 
 .menu-label-text:hover {
-  font-size: 0.9rem;
-  color: rgb(114, 15, 15);
+  font-size: 0.8rem;
+  color: #4285F4;
   text-decoration: none;
   cursor: pointer;
   padding: 1em;
@@ -247,7 +262,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e2e1e1;
+  background-color: #f0f0f0;
 }
 
 .project-list-container {
@@ -274,8 +289,8 @@ html, body {
 }
 
 .project-label {
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-weight: bold;
+  font-size: 1.1rem;
   color: #fff;
   
 }
@@ -333,8 +348,9 @@ html, body {
 .project-description {
   font-size: 1rem;
   font-weight: 300;
+  font-family: 'Raleway', sans-serif;
   color: #000000;
-  line-height: 1.7em;
+  line-height: 2em;
   position: relative;  
   text-shadow: 0.3px 0.3px #ccc;
 }
@@ -429,7 +445,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(228, 228, 228);
 }
 
 .contact-item-container{
@@ -453,8 +469,8 @@ html, body {
 }
 
 .contact-label {
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-weight: bold;
+  font-size: 1.1rem;
   color: #fff;
   font-weight: 300;  
 }
@@ -471,16 +487,22 @@ html, body {
   margin: 0.5em;
 }
 
+.contact-medium-social-icon {
+  width: 2.8em;
+  height: 2.8em;
+  margin: 1em;
+}
+
 .contact-footer-container {
   width: 50em;
-  height: 0.5px;
+  height: 0.1px;
   margin-top: 3em;
-  background:#CCC;
+  background:rgb(19, 19, 19);
 }
 
 .contact-footer-text {
   font-size: 0.8rem;
-  color: #CCC;
-  margin-top: 2em;
+  color: rgb(19, 19, 19);
+  margin-top: 1em;
 }
 

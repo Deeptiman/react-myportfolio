@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../index.css';
+import portfolio from '../images/portfolio.png';
 import profile from '../images/deeptiman.png';
 import github from '../images/github_text.png';
 import medium from '../images/medium_text.png';
@@ -24,6 +25,9 @@ export default class DashboardComponent extends Component {
             <div className={'dashboard-header-container'}>
                 
                 <div className={'menu-bar-container'}>
+                    <div className={'menu-portfolio-logo-container'}>
+                        <img src={portfolio} className={'portfolio-logo'} />
+                    </div>
                     <div className={'menu-label-item-container'}>
                         <a href="#" className={'menu-label-text'}><span>Profile</span></a>
                         <a href="#projects" className={'menu-label-text'}><span>Projects</span></a>

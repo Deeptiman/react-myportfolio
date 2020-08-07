@@ -20,11 +20,11 @@ export default class ContactComponent extends Component {
                     <a href="https://github.com/deeptiman" target="_blank"><img src={github} className={'contact-github-social-icon'} /></a>
                     <a href="https://stackoverflow.com/users/1453704/deeptimancode" target="_blank"><img src={stackoverflow} className={'contact-social-icon'} /></a>
                     <a href="https://www.linkedin.com/in/deeptiman123/" target="_blank"><img src={linkedin} className={'contact-social-icon'} /></a>
-                    <a href="https://medium.com/@deeptiman" target="_blank"><img src={medium} className={'contact-social-icon'} /></a>
+                    <a href="https://medium.com/@deeptiman" target="_blank"><img src={medium} className={'contact-medium-social-icon'} /></a>
                     <a href="https://twitter.com/deeptimancode" target="_blank"><img src={twitter} className={'contact-social-icon'} /></a>
                 </div>
                 <div className={'contact-footer-container'}></div>
-                <p className={'contact-footer-text'}>© 2020 POC CODER. ALL RIGHTS RESERVED.</p>
+                <p className={'contact-footer-text'}>© 2020 POCCODER. ALL RIGHTS RESERVED.</p>
             </div>
         )
     }
