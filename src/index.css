@@ -12,12 +12,22 @@ html, body {
 .dashboard-parent-container {
   width: 100vw;
   margin: 0em;
-  height: 'auto';
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-parent-container {
+  display: none;
+}
+
+.mobile-header-container {
+  display: none;
 }
 
 .dashboard-header-container {
   width: 100vw;
-  height: 65vh;
+  height: auto;
   margin: 0px;
 }
 
@@ -34,6 +44,15 @@ html, body {
 .dashboard-skills-background {
   height: 30em;
   margin-top: 2em;
+}
+
+.tech-skills-div {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .tech-skills-container {
@@ -55,16 +74,40 @@ html, body {
   
 }
 
-.dashboard-profile-div {
+.desktop-parent-container {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.desktop-dashboard-profile-div {
   width: 100vw;
   height: auto;
-  position: absolute;
   margin-top: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; 
+}
+
+.dashboard-profile-container {
+  width: 100vw;
+  height: auto;
+  background: #ffffff;
+}
+
+.dashboard-profile-details-container {
+  width: 100%;
+  height: auto;
+  margin-top: 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
- 
+}
+
+.dashboard-profile {
+  
 }
 
 .bubble-tech-name-container {
@@ -109,7 +152,6 @@ html, body {
   font-weight: 100;
   font-size: 2.0rem;
   color: rgb(53, 53, 53);
-  
 }
 
 .profile-designation-container {
@@ -131,7 +173,7 @@ html, body {
   font-weight: 300;  
 }
 
-.social-profile-container {
+.desktop-social-profile-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -140,27 +182,31 @@ html, body {
   border-radius: 0%;
 }
 
-.github-social-icon {
+.mobile-social-profile-container {
+  display: none;
+}
+
+.desktop-github-social-icon {
   height: 3.2em;
   padding: 1em;
 }
 
-.stackoverflow-social-icon {
+.desktop-stackoverflow-social-icon {
   height: 2.5em;
   padding: 1em;
 }
 
-.linkedin-social-icon {
+.desktop-linkedin-social-icon {
   height: 2em;
   padding: 1em;
 }
 
-.medium-social-icon {
+.desktop-medium-social-icon {
   height: 1.5em;
   padding: 1em;
 }
 
-.twitter-social-icon {
+.desktop-twitter-social-icon {
   height: 1.5em;
   padding: 1em;
 }
@@ -207,6 +253,12 @@ html, body {
   margin-left: 6em;
 }
 
+.mobile-portfolio-logo {
+  width: auto;
+  height: 1.8em;
+  margin-left: 0em;
+}
+
 .menu-label-item-container {
   width: 90%;
   display: flex;
@@ -238,11 +290,49 @@ html, body {
   border-radius: 50%;
 }
 
+.mobile-profile {
+  display: none;
+}
+
 .profile-image {
   height: auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;  
+}
+
+.tab-menu-item-container {
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-top: 2px solid #CCC;
+}
+
+.tab-menu-item-selected-container {
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-top: 2px solid #4285F4;
+}
+
+.tab-menu-item-selected-txt {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #4285F4;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.tab-menu-label-text {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+  text-decoration: none;
+  padding: 1em;
 }
 
 .banner {
@@ -472,7 +562,6 @@ html, body {
   font-weight: bold;
   font-size: 1.1rem;
   color: #fff;
-  font-weight: 300;  
 }
 
 .contact-social-icon {
@@ -506,3 +595,173 @@ html, body {
   margin-top: 1em;
 }
 
+
+
+@media only screen and (max-width: 1000px) {
+
+  
+  .desktop-parent-container {
+      display: none;
+  }
+
+  .mobile-parent-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-header-container {
+    width: 100vw;
+    height: 10vh;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid #b6b5b5;
+  }
+
+  .mobile-body-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-footer-container {
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    background-color: white;
+  }
+
+  .mobile-profile {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+  }
+
+  .dashboard-profile-container {
+    width: 95vw;
+    height: auto;
+    background: #ffffff;
+  }
+
+  .dashboard-profile-details-container {
+    height: auto;
+    margin-top: 10em;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5em;
+  }
+
+  .profile {
+    width: 10em;
+    height: 10em;
+    margin-top: 3em;
+    border-radius: 50%;
+  }
+
+  .profile-image {
+    height: 10em;
+    margin-top: 10em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+  }
+
+  .profile-name-container {
+    width: auto;
+    display: flex;
+    margin-top: 2.2em;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .profile-name {
+    font-weight: 100;
+    font-size: 1.8rem;
+    color: rgb(53, 53, 53);
+  }
+
+  .profile-designation-container {
+    width: 12em;
+    display: flex;
+    padding: 0.8em;
+    border-radius: 5em;
+    margin-top: 1em;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #0c0b0b;
+  }
+  
+  .profile-designation {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 300;  
+  }
+
+  .desktop-social-profile-container{
+    display: none;
+  }
+
+  .mobile-social-profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    margin-left: 0em;
+    border-radius: 0%;
+  }
+
+  .mobile-github-social-icon {
+    height: 3.2em;
+    padding: 0.7em;
+  }
+  
+  .mobile-stackoverflow-social-icon {
+    height: 2.8em;
+    padding: 1em;
+  }
+  
+  .mobile-linkedin-social-icon {
+    height: 2.9em;
+    padding: 1em;
+  }
+  
+  .mobile-medium-social-icon {
+    height: 2.6em;
+    padding: 1em;
+  }
+  
+  .mobile-twitter-social-icon {
+    height: 2.8em;
+    padding: 1em;
+  }
+
+  .profile-description-container {
+    width: 90vw;
+    height: auto;
+    margin-left: 0em;
+  }
+  
+  .profile-description {
+    font-size: 1rem;
+    color: rgb(59, 59, 59);
+    line-height: 1.7em;
+    position: relative;  
+  }
+}
