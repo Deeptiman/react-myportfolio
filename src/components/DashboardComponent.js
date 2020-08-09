@@ -14,7 +14,7 @@ export default class DashboardComponent extends Component {
         super(props);
 
         this.state = {
-            portfolioTabs: ['Profile', 'Projects', 'Technical Skills', 'Contacts'],
+            portfolioTabs: ['Profile', 'Projects', 'Technical Skills'],
             tabSelected: 'Profile'
         }
     }
@@ -39,12 +39,7 @@ export default class DashboardComponent extends Component {
                 <TechnicalSkillsComponent />
             )
         }
-
-        if(tabItem === 'Contacts') {
-            return (
-                <ContactComponent />
-            )
-        }
+       
     }
 
     setSelectedPortfolioTab = (tabItem) => {

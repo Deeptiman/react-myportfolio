@@ -29,7 +29,7 @@ class ProjectsComponent extends Component {
                             </div>
                         }
 
-                        <div className={'github-repo-container'} style={portfolioItem.hasMedium === true ? ({ marginLeft: '3em' }) : ({})}>
+                        <div className={'github-repo-container'} style={portfolioItem.hasMedium === true ? ({ marginLeft: '1em' }) : ({})}>
                             <a href={portfolioItem.github} target="_blank">
                                 <img src={github} className={'github-logo-buttton'} />
                             </a>

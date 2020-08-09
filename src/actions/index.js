@@ -233,10 +233,6 @@ export const fetchPortfolioLists = () => dispatch => {
                 {
                     name: 'aws-s3-bucket',
                     link: 'https://aws.amazon.com/s3/'
-                },
-                {
-                    name: 'android-fragments',
-                    link: 'https://developer.android.com/guide/components/fragments'
                 }
             ],
             github: '',

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 html, body {
-  font-family: "Roboto", sans-serif; 
+  font-family: 'Raleway', sans-serif;
   margin: 0;
   scroll-behavior: smooth;
   overflow-x: hidden; 
@@ -41,14 +41,19 @@ html, body {
   align-items: center;
 }
 
-.dashboard-skills-background {
+.desktop-skills-background {
   height: 30em;
   margin-top: 2em;
+}
+
+.mobile-skills-background {
+  display: none;
 }
 
 .tech-skills-div {
   width: 100vw;
   height: auto;
+  margin-bottom: 0em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,7 +178,7 @@ html, body {
   font-weight: 300;  
 }
 
-.desktop-social-profile-container {
+.social-profile-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -300,7 +305,8 @@ html, body {
 }
 
 .tab-menu-item-container {
-  padding: 0.5em;
+  width: 33.33%;
+  padding: 0.3em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,7 +315,8 @@ html, body {
 }
 
 .tab-menu-item-selected-container {
-  padding: 0.5em;
+  width: 33.33%;
+  padding: 0.3em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,8 +446,7 @@ html, body {
 
 .project-description {
   font-size: 1rem;
-  font-weight: 300;
-  font-family: 'Raleway', sans-serif;
+  font-weight: 300;  
   color: #000000;
   line-height: 2em;
   position: relative;  
@@ -476,13 +482,12 @@ html, body {
 }
 
 .project-tools {
-  font-weight: 300;
+  font-weight: bold;
   font-size: 0.7rem;
   color: #fff;
 }
 
 .project-link-container {
-  width: 90%;
   height: auto;
   margin-top: 1em; 
   display: flex;
@@ -490,9 +495,8 @@ html, body {
 }
 
 .personal-project-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 15% 85%;  
+  display: flex;
+  flex-direction: row;
 }
 
 .medium {
@@ -532,7 +536,7 @@ html, body {
 }
 
 .playstore-badge-icon {
-  height: 6em;  
+  height: 4em;  
 }
 
 .contact-container {
@@ -851,7 +855,6 @@ html, body {
   .mobile-project-description {
     font-size: 1rem;
     font-weight: 300;
-    font-family: 'Raleway', sans-serif;
     color: #000000;
     line-height: 2em;
     position: relative;  
@@ -881,7 +884,7 @@ html, body {
   }
   
   .mobile-project-tools {
-    font-weight: 300;
+    font-weight: bold;
     font-size: 0.56rem;
     color: #fff;
   }
@@ -895,9 +898,8 @@ html, body {
   }
 
   .personal-project-container {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 15% 85%;  
+    display: flex;
+    flex-direction: row;
   }
 
   .medium {
@@ -938,9 +940,30 @@ html, body {
     display: none;
   }
 
-  .dashboard-skills-background {
-    height: 10em;
-    margin-top: 2em;
+  .desktop-skills-background {
+    display: none;
   }
+
+  .tech-skills-div {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .mobile-skills-background {
+    height: 40em;
+    margin-top: 2em;
+    display: flex;
+  }
+
+  .contact-label-container {
+    display: none;
+  }
+
+
   
 }
