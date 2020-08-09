@@ -62,5 +62,4 @@ export default class ProfileComponent extends Component {
             </div>
         )
     }
-
 }

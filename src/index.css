@@ -178,7 +178,7 @@ html, body {
   font-weight: 300;  
 }
 
-.social-profile-container {
+.desktop-social-profile-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -947,7 +947,7 @@ html, body {
   .tech-skills-div {
     width: 100vw;
     height: 100vh;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -62,12 +62,11 @@ class ProjectsComponent extends Component {
         }
     }
 
-    projectTools = (tools) => {
-        console.log("Reading Tools --> " + tools.length)
+    projectTools = (tools) => {       
         if (tools.length > 0) {
             return (
                 tools.map((tool, index) =>
-                    <a href={tool.link} style={{ textDecoration: 'none' }} target="_blank">
+                    <a key={tool.name} href={tool.link} style={{ textDecoration: 'none' }} target="_blank">
                         <div className={'project-tools-item'} style={index != 0 ? ({ marginLeft: '1em' }) : ({})}>
                             <span className={'project-tools'}>{tool.name}</span>
                         </div>
@@ -78,11 +77,11 @@ class ProjectsComponent extends Component {
     }
 
     projectToolsMobileView = (tools) => {
-        console.log("Reading Tools --> " + tools.length)
+
         if (tools.length > 0) {
             return (
                 tools.map((tool, index) =>
-                    <a href={tool.link} style={{ textDecoration: 'none' }} target="_blank">
+                    <a key={tool.name} href={tool.link} style={{ textDecoration: 'none' }} target="_blank">
                         <div className={'mobile-project-tools-item'} style={{ marginLeft: '0.5em' }}>
                             <span className={'mobile-project-tools'}>{tool.name}</span>
                         </div>
@@ -94,15 +93,7 @@ class ProjectsComponent extends Component {
 
 
     renderEvenPortfolioDetails = (portfolioItem, index) => {
-        console.log("Name -- " + portfolioItem.name)
-        console.log("Tools --> ||| " + portfolioItem.tools.length)
-
-        /*if(portfolioItem.tools.length > 0) {
-            portfolioItem.tools.map((tool, index) => {
-                console.log("ToolName :: "+tool.name)
-            })
-        }*/
-
+      
         return (
             <div className={'project-even-items-container'}>
                 <div className={'project-thumbnail-item'}>
@@ -123,14 +114,6 @@ class ProjectsComponent extends Component {
     }
 
     renderOddPortfolioDetails = (portfolioItem, index) => {
-        console.log("Name -- " + portfolioItem.name)
-        console.log("Tools --> ::: " + portfolioItem.tools.length)
-
-        /*if(portfolioItem.tools.length > 0) {
-            portfolioItem.tools.map((tool, index) => {
-                console.log("ToolName :: "+tool.name)
-            })
-        }*/
 
         return (
             <div className={'project-odd-items-container'}>
@@ -161,11 +144,11 @@ class ProjectsComponent extends Component {
 
                     if (i % 2 == 0) {
                         return (
-                            <div className={'projects-list'}>{this.renderEvenPortfolioDetails(portfolioItem, index)}</div>
+                            <div key={i} className={'projects-list'}>{this.renderEvenPortfolioDetails(portfolioItem, index)}</div>
                         )
                     } else if (i % 2 != 0) {
                         return (
-                            <div className={'projects-list'}>{this.renderOddPortfolioDetails(portfolioItem, index)}</div>
+                            <div key={i} className={'projects-list'}>{this.renderOddPortfolioDetails(portfolioItem, index)}</div>
                         )
                     }
                 })
@@ -178,7 +161,7 @@ class ProjectsComponent extends Component {
             return (
                 portfolioLists.map((portfolioItem, index) => {
                     return (
-                        <div className={'mobile-project-items-container'}>
+                        <div key={portfolioItem} className={'mobile-project-items-container'}>
                             <div className={'mobile-project-details-container'}>
                                 <div className={'mobile-project-thumbnail-item'}>
                                     <img src={portfolioItem.banner} className={'mobile-banner'} />
@@ -199,11 +182,8 @@ class ProjectsComponent extends Component {
     }
 
     render() {
-        //console.log("Portfolio ->>> "+JSON.stringify(this.props.portfolioLists))
 
         var portfolioLists = JSON.parse(JSON.stringify(this.props.portfolioLists)).portfolioLists;
-
-        //console.log("Read Portfolio ::: "+portfolioLists.length+" >>> "+JSON.stringify(portfolioLists));
 
         return (
             <div className={'project-list-container'}>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../index.css';
 import portfolio from '../images/portfolio.png';
-import profile from '../images/deeptiman.png';
 
 import ProfileComponent from './ProfileComponent';
 import ProjectsComponent from './ProjectsComponent';

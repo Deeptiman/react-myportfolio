@@ -1,4 +1,4 @@
-import {FETCH_PORTFOLIO} from './constants';
+import { FETCH_PORTFOLIO, BASE_URL } from './constants';
 
 
 export const fetchPortfolioListsCallback = data => ({
@@ -13,7 +13,7 @@ export const fetchPortfolioLists = () => dispatch => {
         {
             id: 1,
             name: 'React-Native TODO List Application',
-            description: 'The react-native-todolist application is a cross-platform mobile application developed using the React-Native framework with Redux implementation. The application has features to create a calendar in both Google & Microsoft cloud platforms, users can also receive a push notification from the server based on topic subscription.',    banner: require('../images/todolist_app.png'),           
+            description: 'The react-native-todolist application is a cross-platform mobile application developed using the React-Native framework with Redux implementation. The application has features to create a calendar in both Google & Microsoft cloud platforms, users can also receive a push notification from the server based on topic subscription.', banner: require('../images/todolist_app.png'),
             tools: [
                 {
                     name: 'react-native',
@@ -346,7 +346,7 @@ export const fetchPortfolioLists = () => dispatch => {
             description: 'In this application, the user can plan, schedule his/her daily activity. There is also a Calendar feature where the user can view their planned activity status with different distinct colors.',
             banner: require('../images/fellowregister_banner.png'),
             tools: [
-               
+
                 {
                     name: 'android-sync-adapter',
                     link: 'https://developer.android.com/training/sync-adapters/creating-sync-adapter'
@@ -375,6 +375,18 @@ export const fetchPortfolioLists = () => dispatch => {
             playstore: 'https://play.google.com/store/apps/details?id=com.mindtree.keffellowregister'
         }
     ]
+
+    fetch(BASE_URL+"/api/projects", {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(response => response.json())
+        .then(res => {
+            console.log("Projects Reponse >>> "+JSON.stringify(res))
+        }).catch(err => {
+            console.log("Error Projects Res ::: "+JSON.stringify(err))
+        })
 
     dispatch(fetchPortfolioListsCallback(projects))
 };
