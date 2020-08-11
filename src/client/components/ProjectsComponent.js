@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../index.css';
 
-import parse from 'html-react-parser';
-
 import medium from '../images/medium_logo.png';
 import github from '../images/github_logo.png';
 import { fetchPortfolioLists } from '../actions';
@@ -102,7 +100,7 @@ class ProjectsComponent extends Component {
                 <div className={'project-details-container'}>
 
                     <div className={'project-description-container'}>
-                        <p className={'project-description'}> {parse(portfolioItem.description)} </p>
+                        <p className={'project-description'}> {portfolioItem.description} </p>
                     </div>
                     <div className={'project-even-tools-container'}>
                         {this.projectTools(portfolioItem.tools)}
@@ -120,7 +118,7 @@ class ProjectsComponent extends Component {
                 <div className={'project-details-container'}>
 
                     <div className={'project-description-container'}>
-                        <p className={'project-description'}> {parse(portfolioItem.description)} </p>
+                        <p className={'project-description'}> {portfolioItem.description} </p>
                     </div>
                     <div className={'project-odd-tools-container'}>
                         {this.projectTools(portfolioItem.tools)}
@@ -131,7 +129,6 @@ class ProjectsComponent extends Component {
                 <div className={'project-odd-thumbnail-item'}>
                     <img src={portfolioItem.banner} className={'banner'} />
                 </div>
-
             </div>
         )
     }
@@ -167,7 +164,7 @@ class ProjectsComponent extends Component {
                                     <img src={portfolioItem.banner} className={'mobile-banner'} />
                                 </div>
                                 <div className={'mobile-project-description-container'}>
-                                    <p className={'mobile-project-description'}> {parse(portfolioItem.description)} </p>
+                                    <p className={'mobile-project-description'}> {portfolioItem.description} </p>
                                 </div>
                                 <div className={'mobile-project-tools-container'}>
                                     {this.projectToolsMobileView(portfolioItem.tools)}

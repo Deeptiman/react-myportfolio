@@ -1,2 +1,0 @@
-In this application, user can plan, schedule his/her daily activity. There is also a Calendar feature where
-user can view their planned activity status with different distinct colors.

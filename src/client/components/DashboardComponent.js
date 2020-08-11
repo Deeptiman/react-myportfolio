@@ -38,7 +38,6 @@ export default class DashboardComponent extends Component {
                 <TechnicalSkillsComponent />
             )
         }
-       
     }
 
     setSelectedPortfolioTab = (tabItem) => {
@@ -105,10 +104,8 @@ export default class DashboardComponent extends Component {
                         <div id={'contacts'} className={'contact-container'}>
                             <ContactComponent />
                         </div>
-
                     </div>
                 </div>
-
             </div>
         )
     }

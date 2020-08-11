@@ -1,8 +1,46 @@
 [
-        {            
+    {            
+            "name": "My Portfolio | MERN Application | POCCODER",
+            "description": "My Portfolio is a MERN based Full-Stack web application where users can see all the projects that I have completed as a professional Software Developer.",    
+            "banner": "http://assets.poccoder.com/images/banner_my_portfolio.png",           
+            "tools": [
+                {
+                    "name": "reactjs",
+                    "link": "https://reactjs.org/docs/getting-started.html"
+                },
+                {
+                    "name": "redux",
+                    "link": "https://redux.js.org/introduction/getting-started"
+                },
+                {
+                    "name": "nodejs",
+                    "link": "https://nodejs.org/en/docs/"
+                },
+                {
+                    "name": "mongodb",
+                    "link": "https://docs.mongodb.com/"
+                },
+                {
+                    "name": "webpack",
+                    "link": "https://webpack.js.org/guides/getting-started/"
+                }
+            ],
+            "github": "https://github.com/Deeptiman/react-myportfolio",
+            "github_badges_last_commit": "https://img.shields.io/github/last-commit/Deeptiman/react-myportfolio",
+            "github_badges_language_count": "https://img.shields.io/github/languages/count/Deeptiman/react-myportfolio",
+            "github_badges_top_language": "https://img.shields.io/github/languages/top/Deeptiman/react-myportfolio",
+            "github_badges_forks": "https://img.shields.io/github/forks/Deeptiman/react-myportfolio?label=Fork&style=social",
+            "hasGithub": true,
+            "hasMedium": false,
+            "medium": "",
+            "hasPlaystore": false,
+            "playstore": "",
+            "timestamp": 1578769350
+    },
+    {            
             "name": "React-Native TODO List Application",
             "description": "The react-native-todolist application is a cross-platform mobile application developed using the React-Native framework with Redux implementation. The application has features to create a calendar in both Google & Microsoft cloud platforms, users can also receive a push notification from the server based on topic subscription.",    
-            "banner": "../images/todolist_app.png",           
+            "banner": "http://assets.poccoder.com/images/todolist_app.png",           
             "tools": [
                 {
                     "name": "react-native",
@@ -35,8 +73,8 @@
         },
         {           
             "name": "Hyperledger Fabric - Single Organization Demo",
-            "description": "The Blockchain application written in Go language to demonstrate the Hyperledger Fabric Blockchain framework. The project repo has been designed to upload employee records into the blockchain and also has the functionality to update, delete the record stored securely in the Hyperledger framework.",
-            "banner": "../images/hyperledger_single_org.png",
+            "description": "The Blockchain application is written in Go language to demonstrate the Hyperledger Fabric Blockchain framework. The project has been developed to upload employee records into the blockchain and also has the functionality to update, delete the record stored securely in the Hyperledger framework.",
+            "banner": "http://assets.poccoder.com/images/hyperledger_single_org.png",
             "tools": [
                 {
                     "name": "blockchain",
@@ -70,8 +108,8 @@
         },
         {
             "name": "Hyperledger Fabric - Multi Organization Demo",
-            "description": "The Blockchain network consists of four organization joined with a  single channel. The ledger data created in an organization can be accessible by the other participating organization in the network.",
-            "banner": "../images/hyperledger_multi_org_banner.png",
+            "description": "The Blockchain network consists of four organizations joined with a single channel. The ledger data created in an organization can be accessible by the other participating organization in the network. So, all the peers of any organization can commit a block as a transaction into the ledger.",
+            "banner": "http://assets.poccoder.com/images/hyperledger_multi_org_banner.png",
             "tools": [
                 {
                     "name": "blockchain",
@@ -104,8 +142,8 @@
         },
         {           
             "name": "Hyperledger Fabric - Privacy and Confidentiality",
-            "description": "The Blockchain application will store the records in a private network that the records will only be accessible to the parent organization unless the records are shared with other organization in the network. The project will demonstrate Privacy and Confidentiality in Hyperledger Fabric.",
-            "banner": "../images/hyperledger_private_org_banner.png",
+            "description": "The Blockchain application will store the records in a private network that the ledger data will only be accessible to the organization that has committed the block into the ledger. The records can be shared with other organizations in the network. The project will demonstrate Privacy and Confidentiality in Hyperledger Fabric.",
+            "banner": "http://assets.poccoder.com/images/hyperledger_private_org_banner.png",
             "tools": [
                 {
                     "name": "private-blockchain",
@@ -142,8 +180,8 @@
         },
         {        
             "name": "Hyperledger Fabric - Offchain Storage",
-            "description": "The Blockchain application is a sample demonstration to understand the concept of implementing offchain storage and it\\'s capability in Hyperledger fabric Blockchain network. So, this project will work as a peer block event listener and will store the block details in the CouchDB that can be query through MapReduce.",
-            "banner": "../images/hyperledger_offchain_data_banner.png",
+            "description": "The Blockchain application is a sample demonstration to understand the concept of implementing offchain storage and the capability in the Hyperledger fabric Blockchain network. So, this project will work as a peer block event listener and will store the block details in the CouchDB that can be query through MapReduce.",
+            "banner": "http://assets.poccoder.com/images/hyperledger_offchain_data_banner.png",
             "tools": [
                 {
                     "name": "blockchain",
@@ -180,8 +218,8 @@
         },
         {            
             "name": "Sur Sadhana",
-            "description": "Sur Sadhana, it\\'s a music app that a singer can analyse his/her singing skill. The app will give the Graphical representation of the voice with a scorecard to the singer.",
-            "banner": "../images/sur_sadhana_banner.png",
+            "description": "The application will allow the singers to learn a different set of tunes of Sa Re Ga Ma Pa in a various range of the notes. The singer can analyze his/her singing skill from the real-time graphical view that plot based on the singer's voice. The application has a learning module that the singer can watch as a lesson before practicing on their own.",
+            "banner": "http://assets.poccoder.com/images/sur_sadhana_banner.png",
             "tools": [
                 {
                     "name": "android",
@@ -201,6 +239,10 @@
                 }
             ],
             "github": "",
+            "github_badges_last_commit": "",
+            "github_badges_language_count": "",
+            "github_badges_top_language": "",
+            "github_badges_forks": "",
             "hasGithub": false,
             "hasMedium": false,
             "hasPlaystore": true,
@@ -210,7 +252,7 @@
         {            
             "name": "Beat Station",
             "description": "BeatStation is a music app where people can listen to their favorite Genre online. The application is built with large storage of music mp3 files in the server that sync with the mobile application for the streaming of the music files.",
-            "banner": "../images/beat_station.png",
+            "banner": "http://assets.poccoder.com/images/beat_station.png",
             "tools": [
                 {
                     "name": "play-audio-android",
@@ -226,6 +268,10 @@
                 }
             ],
             "github": "",
+            "github_badges_last_commit": "",
+            "github_badges_language_count": "",
+            "github_badges_top_language": "",
+            "github_badges_forks": "",
             "hasGithub": false,
             "hasMedium": false,
             "hasPlaystore": true,
@@ -235,7 +281,7 @@
         {            
             "name": "PHP Dom Parser and Translation Tool",
             "description": "The web application is developed to demonstrate translation in live web pages by parsing through HTML DOM and extracting the text element and match them with an English to Odia dictionary that is stored in a local database. The complete parsing result will preview as a translated webpage for a website.",
-            "banner": "../images/parser_tool.png",
+            "banner": "http://assets.poccoder.com/images/parser_tool.png",
             "tools": [
                 {
                     "name": "php",
@@ -267,8 +313,8 @@
         },
         {           
             "name": "Android Alphabet learning App",
-            "description": "The application is an Odia letter learning app that be helpful for people to learn Odia letters writing. The app has a learning module that will help to learn and understand the exact writing of an Odia letter.",
-            "banner": "../images/alphabet_app.png",
+            "description": "The application is an Odia letter learning app that is helpful for people to learn Odia letters writing. The app has a learning module to understand the exact writing of an Odia letter. The application will provide ratings to the user for each writing session.",
+            "banner": "http://assets.poccoder.com/images/alphabet_app.png",
             "tools": [
                 {
                     "name": "android-application",
@@ -301,7 +347,7 @@
         {            
             "name": "Online Examination App",
             "description": "The application is an examination platform where a student can give an assessment online. The teachers can set questions and time for the assessment from the mobile application.",
-            "banner": "../images/fellowprap_banner.png",
+            "banner": "http://assets.poccoder.com/images/fellowprap_banner.png",
             "tools": [
                 {
                     "name": "android-application",
@@ -325,15 +371,20 @@
                 }
             ],
             "github": "",
+            "github_badges_last_commit": "",
+            "github_badges_language_count": "",
+            "github_badges_top_language": "",
+            "github_badges_forks": "",
             "hasGithub": false,
             "hasMedium": false,
             "hasPlaystore": true,
-            "playstore": "https://play.google.com/store/apps/details?id=com.mindtree.kefprap"
+            "playstore": "https://play.google.com/store/apps/details?id=com.mindtree.kefprap",
+            "timestamp": 1407783750
         },
         {
             "name": "TODO List Planner App",
             "description": "In this application, the user can plan, schedule his/her daily activity. There is also a Calendar feature where the user can view their planned activity status with different distinct colors.",
-            "banner": "../images/fellowregister_banner.png",
+            "banner": "http://assets.poccoder.com/images/fellowregister_banner.png",
             "tools": [
                
                 {
@@ -365,6 +416,7 @@
             "hasGithub": false,
             "hasMedium": false,
             "hasPlaystore": true,
-            "playstore": "https://play.google.com/store/apps/details?id=com.mindtree.keffellowregister"
+            "playstore": "https://play.google.com/store/apps/details?id=com.mindtree.keffellowregister",
+            "timestamp": 1402513350
         }
     ]

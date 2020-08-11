@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 html, body {
   font-family: 'Raleway', sans-serif;
@@ -606,10 +604,10 @@ html, body {
 }
 
 
+/******************************* Mobile View ***************************************/
 
 @media only screen and (max-width: 1000px) {
 
-  
   .desktop-parent-container {
       display: none;
   }
@@ -963,7 +961,4 @@ html, body {
   .contact-label-container {
     display: none;
   }
-
-
-  
 }
