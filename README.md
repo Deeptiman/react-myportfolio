@@ -20,7 +20,7 @@ cd reactjs-myportfolio
 npm install
 npm run start
 ```
-Then, type "http://localhost:8000" in the browser
+Then, type "http://localhost:9004" in the browser
 
 ### Follow me
 <a href="https://twitter.com/deeptimancode" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/deeptimancode?style=social"></a>

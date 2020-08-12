@@ -10,7 +10,7 @@ import App from '../client/App';
 
 const cors = require('cors');
 const app = express();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 9004;
 
 var projects_routes = require('./projects/projects_routes');
 
