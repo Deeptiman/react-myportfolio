@@ -1,7 +1,7 @@
 [
     {            
             "name": "My Portfolio | MERN Application | POCCODER",
-            "description": "My Portfolio is a MERN based Full-Stack web application where users can see all the projects that I have completed as a professional Software Developer.",    
+            "description": "My Portfolio is a MERN based Full-Stack web application where users can see all the projects that I have completed as a professional Software Developer. The application developed using Node.js as backend service, MongoDB as cloud storage, and ReactJS as a front-end framework.",    
             "banner": "http://assets.poccoder.com/images/banner_my_portfolio.png",           
             "tools": [
                 {
@@ -39,7 +39,7 @@
     },
     {            
             "name": "React-Native TODO List Application",
-            "description": "The react-native-todolist application is a cross-platform mobile application developed using the React-Native framework with Redux implementation. The application has features to create a calendar in both Google & Microsoft cloud platforms, users can also receive a push notification from the server based on topic subscription.",    
+            "description": "The TODO list application is a cross-platform mobile application developed using the React-Native framework with Redux implementation. The application has features to create a calendar in both Google & Microsoft cloud platforms, users can also receive a push notification from the server based on topic subscription.",    
             "banner": "http://assets.poccoder.com/images/todolist_app.png",           
             "tools": [
                 {
@@ -347,7 +347,7 @@
         {            
             "name": "Online Examination App",
             "description": "The application is an examination platform where a student can give an assessment online. The teachers can set questions and time for the assessment from the mobile application.",
-            "banner": "http://assets.poccoder.com/images/fellowprap_banner.png",
+            "banner": "http://assets.poccoder.com/images/banner_fellowprap.png",
             "tools": [
                 {
                     "name": "android-application",
@@ -383,10 +383,9 @@
         },
         {
             "name": "TODO List Planner App",
-            "description": "In this application, the user can plan, schedule his/her daily activity. There is also a Calendar feature where the user can view their planned activity status with different distinct colors.",
+            "description": "In this application, the user can plan, schedule daily activity. There is also a Calendar feature where the user can view their planned activity status with different distinct colors.",
             "banner": "http://assets.poccoder.com/images/fellowregister_banner.png",
-            "tools": [
-               
+            "tools": [               
                 {
                     "name": "android-sync-adapter",
                     "link": "https://developer.android.com/training/sync-adapters/creating-sync-adapter"
@@ -424,10 +423,9 @@
             "description": "The dictionary application has a very simple user interface where the user can enter English words to get the Odia meaning. The application has more than 1 million downloads in Google Playstore.",
             "banner": "http://assets.poccoder.com/images/odia_dictionary.png",
             "tools": [
-               
                 {
                     "name": "android",
-                    "link": "https://developer.android.com/"
+                    "link": "https://developer.android.com/training/sync-adapters/creating-sync-adapter"
                 },
                 {
                     "name": "sqlite",
