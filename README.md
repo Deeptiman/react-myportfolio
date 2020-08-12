@@ -7,11 +7,10 @@ My Portfolio is a **MERN** based Full-Stack web application where users can see 
 
 ### MongoDB Import
 
-    git clone [https://github.com/Deeptiman/react-myportfolio](https://github.com/Deeptiman/react-myportfolio)
+    git clone https://github.com/Deeptiman/react-myportfolio
     cd reactjs-myportfolio/database
-	mongoimport --uri "mongodb://127.0.0.1:27017/poccoder_portfolio" --collection projects --jsonArray --file projects.json
-
-
+    mongoimport --uri "mongodb://127.0.0.1:27017/poccoder_portfolio" --collection projects --jsonArray --file projects.json
+    
 ### Installation
 ```
 cd reactjs-myportfolio
