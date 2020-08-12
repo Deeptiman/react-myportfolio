@@ -23,4 +23,4 @@ npm run start
 Then, type "http://localhost:8000" in the browser
 
 ### Follow me
-<a hreaf="https://twitter.com/deeptimancode" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/deeptimancode?style=social"></a>
+<a href="https://twitter.com/deeptimancode" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/deeptimancode?style=social"></a>
