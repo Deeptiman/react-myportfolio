@@ -2,6 +2,8 @@
 
 My Portfolio is a **MERN** based Full-Stack web application where users can see all the projects that I have completed as a professional Software Developer. The web application developed using Node.js as backend service, MongoDB as cloud database and ReactJS as a front-end framework and Webpack as a module bundler.
 
+<img src="screenshots/banner_my_portfolio.png" />
+
 ### Website link
 [https://portfolio.poccoder.com](https://portfolio.poccoder.com)
 
