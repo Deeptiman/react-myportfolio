@@ -422,12 +422,12 @@
         {
             "name": "English to Odia Dictionary",
             "description": "The dictionary application has a very simple user interface where the user can enter English words to get the Odia meaning. The application has more than 1 million downloads in Google Playstore.",
-            "banner": "http://assets.poccoder.com/images/fellowregister_banner.png",
+            "banner": "http://assets.poccoder.com/images/odia_dictionary.png",
             "tools": [
                
                 {
                     "name": "android",
-                    "link": "https://developer.android.com/training/sync-adapters/creating-sync-adapter"
+                    "link": "https://developer.android.com/"
                 },
                 {
                     "name": "sqlite",
