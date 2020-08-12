@@ -26,5 +26,5 @@ Then, type "http://localhost:8000" in the browser
 <a href="https://twitter.com/deeptimancode" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/deeptimancode?style=social"></a>
 
 <h2>License</h2>
-<p>This project is licensed under the <a href="https://github.com/Deeptiman/reactjs-myportfolio/blob/master/LICENSE">MIT License</a></p>
+<p>This project is licensed under the <a href="https://github.com/Deeptiman/react-myportfolio/blob/master/LICENSE">MIT License</a></p>
 
