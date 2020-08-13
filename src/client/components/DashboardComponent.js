@@ -13,7 +13,7 @@ export default class DashboardComponent extends Component {
         super(props);
 
         this.state = {
-            portfolioTabs: ['Profile', 'Projects', 'Technical Skills'],
+            portfolioTabs: ['Profile', 'Projects', 'Skills'],
             tabSelected: 'Profile'
         }
     }
@@ -33,7 +33,7 @@ export default class DashboardComponent extends Component {
             )
         }
 
-        if(tabItem === 'Technical Skills') {
+        if(tabItem === 'Skills') {
             return (
                 <TechnicalSkillsComponent />
             )
