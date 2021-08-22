@@ -4,9 +4,6 @@ My Portfolio is a **MERN** based Full-Stack web application where users can see 
 
 <img src="screenshots/banner_my_portfolio.png" />
 
-### Website link
-<a href="https://portfolio.poccoder.com" target="_blank">https://portfolio.poccoder.com</a>
-
 ### MongoDB Import
 
     git clone https://github.com/Deeptiman/react-myportfolio
